@@ -15,6 +15,7 @@ const Footer = () => {
           <a href="/">Order Online</a>
           <a href="/">Login</a>
         </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste optio explicabo st blanditiis, deleniti voluptatum perferendis! Minus.
         <div className="col2">
           <h4>Contact</h4>
           <a href="/">Address</a>
