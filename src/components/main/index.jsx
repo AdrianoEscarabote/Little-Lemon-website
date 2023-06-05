@@ -1,8 +1,10 @@
+import style from "./style.module.css"
+
 const Main = () => {
 
   return (
-    <main>
-      <h2>estou no main</h2>
+    <main className={style.main}>
+      <section></section>
     </main>
   )
 }

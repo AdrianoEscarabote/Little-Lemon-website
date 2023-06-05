@@ -1,3 +1,5 @@
+import style from "./style.module.css"
+
 const Footer = () => {
 
   return (
@@ -15,13 +17,13 @@ const Footer = () => {
           <a href="/">Order Online</a>
           <a href="/">Login</a>
         </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste optio explicabo st blanditiis, deleniti voluptatum perferendis! Minus.
         <div className="col2">
           <h4>Contact</h4>
           <a href="/">Address</a>
           <a href="/">phone number</a>
           <a href="/">email</a>
         </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta omnis laboriosam aut autem animi rem ducimus excepturi ex provident?
         <div className="col3">
           <h4>Social Media Links</h4>
           <a href="/">Address</a>
