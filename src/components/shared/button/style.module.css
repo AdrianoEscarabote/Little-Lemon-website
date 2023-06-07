@@ -1,0 +1,15 @@
+.a {
+  font-family: 'Karla';
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 202px;
+  height: 56px;
+  background: #F4CE14;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+}
