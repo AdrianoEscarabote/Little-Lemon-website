@@ -1,0 +1,17 @@
+.parent,
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px 165px;
+  margin: 0 auto;
+  justify-content: space-between
+}
+
+.text h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}

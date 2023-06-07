@@ -1,0 +1,27 @@
+.testimonials {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.testimonials h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.parentCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
