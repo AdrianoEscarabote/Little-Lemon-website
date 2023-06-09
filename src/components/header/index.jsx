@@ -1,66 +1,71 @@
+import { Link } from "react-router-dom"
 import logo from "../../assets/Logo.svg"
-import restaurantFood from "../../assets/restauranfood.jpg"
-import Button from "../shared/button"
 import style from "./style.module.css"
+import HeroSection from "../shared/hero-section"
+import { useState } from "react"
+import iconMenu from "../../assets/icon_mobile.svg"
+import iconCloseMenu from "../../assets/icon_close.png"
+import menuImage from "../../assets/menu.webp"
 
-const Header = () => {
+const Header = ({ HeroSectionOpen }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <header className={style.header}>
       <div className={style.container_content}>
         <img src={logo} alt="" />
         <nav>
-          <ul className={style.ul}>
+          <button 
+            className={style.button_mobile_menu} 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <img src={mobileMenuOpen ? iconCloseMenu : iconMenu} alt="" />
+          </button>
+          <ul className={
+            mobileMenuOpen 
+            ? style.ul_open 
+            : style.ul}
+          >
             <li>
-              <a className={style.a} href="/">
+              <Link to={"/"} className={style.a}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={style.a} href="/">
+              <Link to={"/about"} className={style.a}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={style.a} href="/">
+              <a className={style.a} href={menuImage} target="_blank">
                 Menu
               </a>
             </li>
             <li>
-              <a className={style.a} href="/">
+              <Link className={style.a} to="/reservations">
                 Reservations
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={style.a} href="/">
+              <Link className={style.a} to="/order_online">
                 Order online
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={style.a} href="/">
+              <Link className={style.a} to="/login">
                 Login
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
-      
-      <div className={style.hero_container}>
-
-        <section className={style.section}>
-
-          <div className={style.text}>
-            <h1 className={style.h1}>Little Lemon</h1>
-            <p className={style.city}>Chicago</p>
-            <p className={style.description}>We are a family owned Mediterraneam restaurant, focused on traditional recipes served with a modern twist.</p>
-            <Button label={"Reserve a table"} />
-          </div>
-
-          <img className={style.img} src={restaurantFood} alt="" />
-
-        </section>
-
-      </div>
+      {
+        HeroSectionOpen ? 
+        (
+          <HeroSection />
+        )
+        : null
+      }
     </header>
   )
 }

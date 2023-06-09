@@ -1,5 +1,7 @@
 import style from "./style.module.css"
 import logoFooter from "../../assets/footer-logo.png"
+import { Link } from "react-router-dom"
+import menuImage from "../../assets/menu.webp"
 
 const Footer = () => {
 
@@ -13,22 +15,22 @@ const Footer = () => {
           <h4>Doormat Navigation</h4>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/">Menu</a>
+              <a href={menuImage} target="_blank">Menu</a>
             </li>
             <li>
-              <a href="/">Reservations</a>
+              <Link to="/reservations">Reservations</Link>
             </li>
             <li>
-              <a href="/">Order Online</a>
+              <Link to="/order_online">Order Online</Link>
             </li>
             <li>
-              <a href="/">Login</a>
+              <Link to="/login">Login</Link>
             </li>
           </ul>         
         </div>

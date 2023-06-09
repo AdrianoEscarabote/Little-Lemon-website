@@ -3,17 +3,17 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
-  padding: 60px 165px;
+  padding: 3.75rem 10.3125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .footerLogo {
-  width: 162px;
-  height: 279px;
+  width: 10.125rem;
+  height: 17.4375rem;
 }
 
 .col1,
@@ -25,22 +25,46 @@
 }
 
 .container h4 {
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #fff;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .container a {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
 } 
 
 .container ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
+}
+
+@media (max-width: 70.25rem) {
+  .container {
+    padding: 3.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .footerLogo {
+    width: 7.75rem;
+    height: 13.0625rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2.625rem;
+  }
+  .container ul {
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -8,17 +8,18 @@
 .container_content {
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
-  padding: 20px 165px;
+  max-width: 90rem;
+  padding: 1.25rem 10.3125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.ul {
+.ul,
+.ul_open {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .a {
@@ -26,64 +27,49 @@
   text-decoration: none;
 }
 
-.hero_container {
-  display: flex;
-  align-items: center;
-  background: #495E57;
+.button_mobile_menu {
+  display: none;
+  border: none;
+  background: transparent;
 }
 
-.section {
-  position: relative;
-  height: 391px;
-  max-width: 1440px;
-  padding: 20px 165px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.button_mobile_menu img {
+  width: 2rem;
+  height: auto;
 }
 
-.img {
-  position: absolute;
-  top: 20px;
-  right: 165px;
-  width: 355px;
-  height: 415px;
-  border-radius: 16px;
+@media (max-width: 70.25rem) {
+  .container_content {
+    padding: 1.25rem !important;
+  }
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
 
-.section {
-  background: #495E57;
-}
+@media (max-width: 40rem) {
+  .button_mobile_menu {
+    display: flex !important;
+  }
+  .ul {
+    opacity: 0;
+    position: absolute;
+    top: -37.5rem;
+    visibility: hidden;
 
-.description {
-  max-width: 330px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-
-.h1 {
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 77px;
-  color: #F4CE14;
-}
-
-.city {
-  font-family: 'Markazi Text';
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  color: #FFFFFF;
+  }
+  .ul_open {
+    z-index: 1000;
+    left: 0rem;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    top: 4.375rem;
+    padding: 1.25rem;
+    visibility: visible;
+  }
 }
