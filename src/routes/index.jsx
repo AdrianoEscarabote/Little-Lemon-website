@@ -1,15 +1,18 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import Header from "../components/header/index"
-import Footer from "../components/footer"
 import App from "../App"
+import PageAboutUs from "../pages/About"
+import OrderOnline from "../pages/OrderOnline"
+import Login from "../pages/Login"
 
 const CustomRoutes = () => {
 
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/contact" element={<Footer />} />
-    </Routes>  
+      <Route path="/about" element={<PageAboutUs />} />
+      <Route path="/order_online" element={<OrderOnline />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   )
 }
 
