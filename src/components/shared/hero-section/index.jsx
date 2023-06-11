@@ -10,7 +10,7 @@ const HeroSection = () => {
         <section className={style.section}>
 
           <div className={style.text}>
-            <h1 className={style.h1}>Little Lemon</h1>
+            <h1 className={style.h1} data-testid="h1">Little Lemon</h1>
             <p className={style.city}>Chicago</p>
             <p className={style.description}>We are a family owned Mediterraneam restaurant, focused on traditional recipes served with a modern twist.</p>
             <Button label={"Reserve a table"} />
