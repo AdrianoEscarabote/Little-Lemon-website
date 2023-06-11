@@ -7,7 +7,7 @@ const App = () => {
   
   return (
     <>
-      <Header />
+      <Header HeroSectionOpen={true} />
       <Main />
       <Footer />
     </>

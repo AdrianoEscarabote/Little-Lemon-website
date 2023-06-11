@@ -16,7 +16,8 @@ h6 {
 }
 
 p,
-span {
+span,
+a {
   font-family: 'Karla', sans-serif;
 }
 

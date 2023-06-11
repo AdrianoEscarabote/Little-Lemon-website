@@ -3,6 +3,7 @@ import App from "../App"
 import PageAboutUs from "../pages/About"
 import OrderOnline from "../pages/OrderOnline"
 import Login from "../pages/Login"
+import Reservations from "../pages/Reservations"
 
 const CustomRoutes = () => {
 
@@ -12,6 +13,7 @@ const CustomRoutes = () => {
       <Route path="/about" element={<PageAboutUs />} />
       <Route path="/order_online" element={<OrderOnline />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/reservations" element={<Reservations />} />
     </Routes>
   )
 }
